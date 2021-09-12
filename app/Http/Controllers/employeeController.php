@@ -56,7 +56,7 @@ class employeeController extends Controller
     public function edit(employee $employee,$id)
     {
       $employee=employee::find($id);
-      return('edit',['employee'=>$employee]);
+      return view('edit',['employee'=>$employee]);
     }
 
     /**
