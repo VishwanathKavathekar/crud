@@ -55,8 +55,8 @@ class employeeController extends Controller
      */
     public function edit(employee $employee,$id)
     {
-      $var=employee::find($id);
-      return('edit','var'=>$var);
+      $employee=employee::find($id);
+      return('edit',['employee'=>$employee]);
     }
 
     /**

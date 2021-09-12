@@ -13,11 +13,11 @@
               @csrf
               <div class="mb-3">
                 <label> <b> Employee name:</b></label>
-                <input type="text" name="title"  class="form-control">
+                <input type="text" name="name"  class="form-control">
 		            </div>
                 <div class="mb-3">
 			<label><b>Employee position:</b></label>
-			<input type="text" name="author"  class="form-control">
+			<input type="text" name="position"  class="form-control">
 		</div>
     <input type="submit" name="insert" value="Insert" class="btn btn-primary">
 
