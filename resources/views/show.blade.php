@@ -16,13 +16,13 @@
 			<th> delete</th>
 			<th> edit</th>
 		</tr>
-		@foreach($emp as $value)  <!-- for loop to fetch data --> <!-- for each emp data which is stored as value -->
+		@foreach($emp as $employee)  <!-- for loop to fetch data --> <!-- for each emp data which is stored as value -->
 		<tr>
-			<td>{{$value->id}}</td>
-			<td>{{$value->emp_name}}</td>
-			<td>{{$value->emp_pos}}</td>
-			<td><a href="/delete/{{$value->id}}" class="btn btn-danger">delete</a></td>
-			<td><a href="/edit/{{$value->id}}" class="btn btn-success">edit</a></td>
+			<td>{{$employee->id}}</td>
+			<td>{{$employee->emp_name}}</td>
+			<td>{{$employee->emp_pos}}</td>
+			<td><a href="/delete/{{$employee->id}}" class="btn btn-danger">delete</a></td>
+			<td><a href="/edit/{{$employee->id}}" class="btn btn-success">edit</a></td>
 		</tr>
 		@endforeach
 	</table>
