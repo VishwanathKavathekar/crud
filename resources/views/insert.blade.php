@@ -9,7 +9,7 @@
 <body>
       <div class="container">
         <h1 class="text-center"> Add Employee Data </h1>
-          <form method="post" action="/store">   <!--store fuction involved in PostController.php -->
+          <form method="post" action="/store">   <!--store fuction involved in employeeController.php -->
               @csrf
               <div class="mb-3">
                 <label> <b> Employee name:</b></label>
