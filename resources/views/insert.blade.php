@@ -22,7 +22,7 @@
     <input type="submit" name="insert" value="Insert" class="btn btn-primary">
 
           </form>
-          <a href="/views/show.blade.php" class="btn btn-success">show data</a>
+      <!--    <a href="/views/show.blade.php" class="btn btn-success">show data</a> -->
 
       </div>
 </body>

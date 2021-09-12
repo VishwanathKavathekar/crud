@@ -27,8 +27,8 @@ class employeeController extends Controller
     public function store(Request $request)  // this function gets data from views/employee/insert.blade.php
     {
       $employee=new employee;    // instance of employee class
-        $employee->emp_name=$request->get('emp_name');    //data from insert.blade.php goes to database
-        $employee->emp_pos=$request->get('emp_pos');
+        $employee->emp_name=$request->get('name');    //data from insert.blade.php goes to database
+        $employee->emp_pos=$request->get('position');
         $employee->save();        //data gets injected through save function
             echo "<h1><center>Data send successfully.....</center></h1>";
         //    echo "  <a href="/views/show.blade.php" class="btn btn-success">show data</a>"
