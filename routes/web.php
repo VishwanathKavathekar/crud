@@ -17,13 +17,7 @@ use App\Http\Controllers\employeeController;
 Route::get('/', function () {
     return view('insert');
 });
-/*
-Route::post('/store',[PostController::class,'store']);
-Route::get('/show',[PostController::class,'show']); // show from insert.blade.php
-Route::get('/delete/{id}',[PostController::class,'destroy']);  //fucnction deined as destory
-Route::get('/edit/{id}',[PostController::class,'edit']);
-Route::post('/update/{id}',[PostController::class,'update']);
-*/
+
 
 Route::post('/store',[employeeController::class,'store']);
 Route::get('/show',[employeeController::class,'show']); // show from insert.blade.php
