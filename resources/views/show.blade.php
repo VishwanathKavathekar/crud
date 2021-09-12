@@ -20,7 +20,7 @@
 		<tr>
 			<td>{{$value->id}}</td>
 			<td>{{$value->emp_name}}</td>
-			<td>{{value->emp_pos}}</td>
+			<td>{{$value->emp_pos}}</td>
 			<td><a href="/delete/{{$value->id}}" class="btn btn-danger">delete</a></td>
 			<td><a href="/edit/{{$value->id}}" class="btn btn-success">edit</a></td>
 		</tr>
