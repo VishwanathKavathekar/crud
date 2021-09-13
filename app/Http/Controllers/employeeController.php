@@ -31,7 +31,7 @@ class employeeController extends Controller
         $employee->emp_pos=$request->get('position');
         $employee->save();        //data gets injected through save function
             echo "<h1><center>Data send successfully.....</center></h1>";
-        //    echo "  <a href="/views/show.blade.php" class="btn btn-success">show data</a>"
+           echo "  <a href='/show' class='btn btn-success'>show data</a>";
         //or    return view('show');
     }
 
