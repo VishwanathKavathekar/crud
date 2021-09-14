@@ -32,7 +32,7 @@ class employeeController extends Controller
         $employee->save();        //data gets injected through save function
             echo "<h1><center>Data send successfully.....</center></h1>";
            echo "  <a href='/show' class='btn btn-success'>show data</a>";
-        
+
     }
 
     /**
@@ -43,7 +43,7 @@ class employeeController extends Controller
      */
     public function show(employee $employee)  //
     {
-        $emp=employee::all();   // object emp shows all data fetched
+        $emp=employee::all();   // object emp shows all data fetched from the database to show page
         return view('show',['emp'=>$emp]); // this gets send in the for each loop key'emp'
     }
 
