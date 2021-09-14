@@ -32,7 +32,7 @@ class employeeController extends Controller
         $employee->save();        //data gets injected through save function
             echo "<h1><center>Data send successfully.....</center></h1>";
            echo "  <a href='/show' class='btn btn-success'>show data</a>";
-        //or    return view('show');
+        
     }
 
     /**
